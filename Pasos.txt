@@ -5,3 +5,5 @@
    -Registro (Listo)
    -Subasta (Listo)
    -Perfil (Listo)
+   -Crear subasta (Listo)
+3. Quitar la barra de arriba (Listo)

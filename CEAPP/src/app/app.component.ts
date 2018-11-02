@@ -28,17 +28,22 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Contrato', component: ContratoPage },
-      { title: 'Crear Subasta', component: CrearSubastaPage },
-      { title: 'Home', component: HomePage },
+      { title: 'Contrato', component: ContratoPage},
+      { title: 'Crear Subasta', component: CrearSubastaPage},
+      { title: 'Home', component: HomePage},
       { title: 'List', component: ListPage },
-      { title: 'Login', component: LoginPage },
-      { title: 'Perfil', component: PerfilPage },
+      { title: 'Login', component: LoginPage},
+      { title: 'Perfil', component: PerfilPage},
       { title: 'Proyecto', component: ProyectoPage },
-      { title: 'Registro', component: RegistroPage },
-      { title: 'Subasta', component: SubastaPage }
+      { title: 'Registro', component: RegistroPage},
+      { title: 'Subasta', component: SubastaPage},
+      { title: 'Salir', component: LoginPage}
     ];
 
+  }
+
+  salir(){
+    console.log("Llamando a salir");
   }
 
   initializeApp() {
@@ -53,6 +58,11 @@ export class MyApp {
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
+    if(page.title == "Salir"){
+      this.salir();
+    }else{
+      this.nav.setRoot(page.component);  
+    }
+
   }
 }
