@@ -1,0 +1,10 @@
+---Guardar una versión en el GIT----
+git add .
+git commit -m "numero push"
+git push origin master
+
+----Recuperar la versión del GIT----
+git fetch --all
+git reset --hard origin/master
+git pull origin master
+
