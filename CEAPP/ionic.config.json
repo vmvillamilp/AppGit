@@ -1,8 +1,8 @@
 {
-  "name": "CEApp",
+  "name": "CEAPP",
   "integrations": {
     "cordova": {}
   },
   "type": "ionic-angular",
-  "pro_id": "18271d7d"
+  "pro_id": "c5b0ab5a"
 }
