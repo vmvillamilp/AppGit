@@ -1,1 +1,7 @@
-1. Cambiar la pagina de inicio a LoginPage
+1. Cambiar la pagina de inicio a LoginPage. (Completo)
+2. Agregar a la lista de componentes las paginas restantes:
+   -Contrato (Listo)
+   -Proyecto (Listo)
+   -Registro (Listo)
+   -Subasta (Listo)
+   -Perfil (Listo)

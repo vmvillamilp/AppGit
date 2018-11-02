@@ -6,6 +6,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { LoginPage } from '../pages/login/login';
+import { ContratoPage } from '../pages/contrato/contrato';
+import { ProyectoPage } from '../pages/proyecto/proyecto';
+import { RegistroPage } from '../pages/registro/registro';
+import { SubastaPage } from '../pages/subasta/subasta';
+import { PerfilPage } from '../pages/perfil/perfil';
+import { CrearSubastaPage } from '../pages/crear-subasta/crear-subasta';
 
 @Component({
   templateUrl: 'app.html'
@@ -22,8 +28,15 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
+      { title: 'Contrato', component: ContratoPage },
+      { title: 'Crear Subasta', component: CrearSubastaPage },
       { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'List', component: ListPage },
+      { title: 'Login', component: LoginPage },
+      { title: 'Perfil', component: PerfilPage },
+      { title: 'Proyecto', component: ProyectoPage },
+      { title: 'Registro', component: RegistroPage },
+      { title: 'Subasta', component: SubastaPage }
     ];
 
   }

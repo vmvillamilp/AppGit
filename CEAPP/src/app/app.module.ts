@@ -10,6 +10,8 @@ import { ContratoPage } from '../pages/contrato/contrato';
 import { ProyectoPage } from '../pages/proyecto/proyecto';
 import { RegistroPage } from '../pages/registro/registro';
 import { SubastaPage } from '../pages/subasta/subasta';
+import { PerfilPage } from '../pages/perfil/perfil';
+import { CrearSubastaPage } from '../pages/crear-subasta/crear-subasta';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -23,7 +25,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContratoPage,
     ProyectoPage,
     RegistroPage,
-    SubastaPage
+    SubastaPage,
+    PerfilPage,
+    CrearSubastaPage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +42,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContratoPage,
     ProyectoPage,
     RegistroPage,
-    SubastaPage
+    SubastaPage,
+    PerfilPage,
+    CrearSubastaPage
   ],
   providers: [
     StatusBar,
