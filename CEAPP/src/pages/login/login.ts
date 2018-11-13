@@ -6,9 +6,6 @@ import { LoadingProvider } from '../../providers/loading/loading';
 import { DatosEstaticos } from '../../providers/config/DatosEstaticos';
 import { HttpClient} from '@angular/common/http';
 
-//import { RegisterPage } from '../register/register';
-//import { MenuPrincipalPage } from '../menu-principal/menu-principal';
-
 @IonicPage()
 @Component({
   selector: 'page-login',

@@ -61,7 +61,7 @@ export class MyApp {
     if(page.title == "Salir"){
       this.salir();
     }else{
-      this.nav.setRoot(page.component);  
+      this.nav.setRoot(page.component);
     }
 
   }

@@ -19,6 +19,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoadingProvider } from '../providers/loading/loading';
 import { DatosEstaticos } from '../providers/config/DatosEstaticos';
 import { HttpClientModule } from '@angular/common/http';
+import { File } from '@ionic-native/file';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { HttpClientModule } from '@angular/common/http';
   providers: [
     StatusBar,
     SplashScreen,
+    File,
     LoadingProvider,
     DatosEstaticos,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
