@@ -16,6 +16,10 @@ import { CrearSubastaPage } from '../pages/crear-subasta/crear-subasta';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { LoadingProvider } from '../providers/loading/loading';
+import { DatosEstaticos } from '../providers/config/DatosEstaticos';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -31,7 +35,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    HttpClientModule,
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -49,6 +54,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
+    LoadingProvider,
+    DatosEstaticos,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

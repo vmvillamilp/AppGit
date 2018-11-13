@@ -1,3 +1,71 @@
-<ion-content padding>
+<!--
+  Boton del menu
   <button ion-button secondary menuToggle>Bienvenido al Login</button>
+</ion-header> -->
+
+
+<ion-content class="bg-img">
+
+  <div class="main-content">
+    <div padding text-center class="container-logo">
+      <!-- <img src="assets/imgs/logo.png"> -->
+      <ion-label center class="titulo" color="white" text-wrap>Consulting Express</ion-label>
+    </div>
+
+    <div text-center class="socialLogin" padding>
+      <!--<form [formGroup]="authForm" (ngSubmit)="userLogin(loginData)"> -->
+      <form [formGroup]="authForm" (ngSubmit)="accederMenuPrincipal()">
+        <div class="errormsg">
+          <div *ngIf="email.errors && email.touched">
+            <p>Un correo es requerido.</p>
+          </div>
+          <div *ngIf="password.errors && password.touched">
+            <p>La contraseña es requerida.</p>
+          </div>
+        </div>
+
+        <ion-list>
+          <ion-item padding-right>
+            <ion-label>
+              <ion-icon ios="ios-mail" md="md-mail"></ion-icon>
+            </ion-label>
+            <ion-input [(ngModel)]="loginData.email" [formControl]="email" id="email" type="text" required placeholder="Correo *" value="aa"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              <ion-icon ios="ios-unlock" md="md-unlock"></ion-icon>
+            </ion-label>
+            <ion-input [(ngModel)]="loginData.password" [formControl]="password" id="password" type="{{passwordtype}}" required placeholder="Contraseña *" value="bb"></ion-input>
+            <button ion-button clear class="eye-icon-btn" type="button" item-right (click)="managePassword()"><ion-icon name="{{passeye}}"></ion-icon></button>
+          </ion-item>
+        </ion-list>
+        <button type="submit" ion-button full color="dark" [disabled]="!authForm.valid" item-right>Ingresar</button>
+      </form>
+
+    </div>
+
+    <div class="sepretor-or" padding-horizontal></div>
+
+    <div padding class="container-bottom">
+      <ion-card style="opacity:0.8;">
+        <ion-card-content align="center" >
+          <ion-card-title>
+            Estamos trabajando!
+          </ion-card-title>
+          <p align="center">
+            Consulting App esta en constante evolución, si no encuentras una
+            funcionalidad en el momento intenta volver despues y la encontraras!
+          </p>
+        </ion-card-content>
+      </ion-card>
+
+      <div padding text-center class="form-bottom-text" ></div>
+      <div padding text-center class="form-bottom-text">
+        <a href="javascript:void(0);" (click)="forgetpassword()" color="black" > <ion-label color="black">Olvidastes la contraseña?</ion-label></a>
+        <ion-label color="black">No tienes cuenta? <a href="javascript:void(0);" (click)="moveToRegister()" style="color:black;">Registrate</a></ion-label>
+      </div>
+
+    </div>
+  </div>
+
 </ion-content>
