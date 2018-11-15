@@ -107,6 +107,7 @@ export class LoginPage {
 
 accederMenuPrincipal(){
   this.navCtrl.push(HomePage);
+  this.staticData.setDatosUsuario(this.loginData.email,this.loginData.password);
 }
 
 managePassword() {

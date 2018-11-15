@@ -1,0 +1,5 @@
+-Validar el login
+-Validar el registro
+-Validar cuenta perdida
+-Habilitar el modulo para hacer click y mostrar imagen en pantalla completa
+-

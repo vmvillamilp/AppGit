@@ -3,7 +3,12 @@
 <ion-menu [content]="content">
   <ion-header>
     <ion-toolbar>
-      <ion-title>Menu lateral</ion-title>
+      <ion-title text-center>Menu lateral</ion-title>
+      <div class="cabeza_lista">
+        {{this.staticData.getEmailUsuarioConectado()}}+{{this.staticData.getPasswordUsuarioConectado()}}
+        <img class="img_circular" src="https://scontent.fbaq6-1.fna.fbcdn.net/v/t1.0-9/46165007_10156765733243700_6108233975052894208_n.jpg?_nc_cat=109&_nc_ht=scontent.fbaq6-1.fna&oh=92d0d1c91149770f95cfec4816f12aed&oe=5C7763F6" alt="Avatar">
+      </div>
+
     </ion-toolbar>
   </ion-header>
 

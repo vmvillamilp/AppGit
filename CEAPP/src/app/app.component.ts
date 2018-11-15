@@ -13,6 +13,8 @@ import { SubastaPage } from '../pages/subasta/subasta';
 import { PerfilPage } from '../pages/perfil/perfil';
 import { CrearSubastaPage } from '../pages/crear-subasta/crear-subasta';
 
+import { DatosEstaticos} from '../providers/config/DatosEstaticos';
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -23,7 +25,7 @@ export class MyApp {
 
   pages: Array<{title: string, component: any}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(public staticData: DatosEstaticos, public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
