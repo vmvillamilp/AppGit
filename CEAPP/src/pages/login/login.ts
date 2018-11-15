@@ -6,6 +6,9 @@ import { LoadingProvider } from '../../providers/loading/loading';
 import { DatosEstaticos } from '../../providers/config/DatosEstaticos';
 import { HttpClient} from '@angular/common/http';
 
+import { HomePage } from '../home/home';
+import { RegistroPage } from '../registro/registro';
+
 @IonicPage()
 @Component({
   selector: 'page-login',
@@ -83,7 +86,7 @@ export class LoginPage {
 
   // Move to register page
   moveToRegister(){
-//  	this.navCtrl.push(RegisterPage);
+  	this.navCtrl.push(RegistroPage);
   }
 
   //Move to Home Page
@@ -103,7 +106,7 @@ export class LoginPage {
 }
 
 accederMenuPrincipal(){
-  //this.navCtrl.push(MenuPrincipalPage);
+  this.navCtrl.push(HomePage);
 }
 
 managePassword() {
