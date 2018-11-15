@@ -37,12 +37,20 @@
   }
 }
 
+$SIDEMENU_TOP: #A23C4B;
+$SIDEMENU_BOTTOM: #ff9068;
+$SIDEMENU_TRANSPARENCY: rgba(255,255,255,0.4);
+
+
 /* Siide menu design */
 .app-root {
   ion-menu {
     .menu-inner,
     .content {
-      background-color: $black;
+      background: -webkit-gradient(left top, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+    background: -o-linear-gradient(bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+    background: -moz-linear-gradient(bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+     background: linear-gradient(to bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
     }
   }
   side-menu-content {
